@@ -1,0 +1,30 @@
+{
+    "name": "vtardia/cli-parser",
+    "type": "library",
+    "description": "A command line parser utility for PHP scripts.",
+    "keywords": ["console", "shell", "cli", "commands"],
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "license": "MIT",
+    "homepage":    "https://github.com/vtardia/cli-parser",
+    "authors": [
+        {
+            "name": "Vito Tardia",
+            "email": "vito@tardia.me"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.3"
+        },
+    "autoload": {
+        "psr-4": {"CLIParser\\": "src/"}
+    },
+    "archive": {
+        "exclude": ["vendor", ".DS_Store", "*.log"]
+    },
+    "scripts": {
+        "test":"./vendor/bin/phpunit"
+    }
+}
